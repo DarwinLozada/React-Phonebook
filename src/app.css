@@ -1,0 +1,13 @@
+.entering-notification {
+  animation: entering-notification 0.6s ease;
+}
+
+@keyframes entering-notification {
+  0% {
+    opacity: 40%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}

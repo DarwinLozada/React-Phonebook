@@ -22,8 +22,6 @@ const Contact = ({ contact, setContactsToShow, setContacts }) => {
       setShowNotiDeleteContact(false);
       setTimeout(() => {
         if (shouldDeleteContact) {
-          console.log("hola");
-
           handleDelete();
         }
       }, 300);

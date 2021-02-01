@@ -4,7 +4,6 @@ import AddNumber from "./AddContact";
 import Contacts from "./Contacts";
 import Filter from "./Filter";
 import contactServices from "../services/contacts";
-import axios from "axios";
 
 const Phonebook = () => {
   const [contacts, setContacts] = useState([]);
@@ -14,7 +13,6 @@ const Phonebook = () => {
 
   useEffect(() => {
     contactServices.getAllContacts().then((response) => {
-      console.log(response);
       setContacts(response);
       setContactsToShow(response);
     });

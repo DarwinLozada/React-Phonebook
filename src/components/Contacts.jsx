@@ -20,10 +20,7 @@ const Contacts = ({ props }) => {
           );
         })
       ) : (
-        <h1
-          className="text-gray-400 text-center text-lg
-        "
-        >
+        <h1 className="text-gray-400 text-center text-lg mt-20">
           There are no contacts
         </h1>
       )}

@@ -76,9 +76,7 @@ const AddContact = ({ props }) => {
         id: Date.now(),
       };
       newContacts = [...props.contacts, newContact];
-      contactServices.createContact(newContact).then((response) => {
-        console.log(response);
-      });
+      contactServices.createContact(newContact);
       setContactsState(newContacts);
     }
   };
